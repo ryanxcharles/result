@@ -1,6 +1,6 @@
 {
   "name": "@ryanxcharles/result",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Rust-like Result type for TypeScript/node.js/deno/bun.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
@@ -19,7 +19,9 @@
     "type": "git",
     "url": "http://github.com/rxcharles/result"
   },
-  "keywords": ["result"],
+  "keywords": [
+    "result"
+  ],
   "author": "Ryan X. Charles <ryan@ryanxcharles.com> (http://ryanxcharles.com)",
   "license": "MIT",
   "type": "module",
