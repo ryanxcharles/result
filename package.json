@@ -15,6 +15,10 @@
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "pnpm run clean && pnpm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/rxcharles/result"
+  },
   "keywords": ["result"],
   "author": "Ryan X. Charles <ryan@ryanxcharles.com> (http://ryanxcharles.com)",
   "license": "MIT",
