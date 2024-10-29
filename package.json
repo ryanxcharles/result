@@ -1,6 +1,6 @@
 {
   "name": "@ryanxcharles/result",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Rust-like Result type for TypeScript/node.js/deno/bun.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
