@@ -23,13 +23,16 @@ handling more predictable and functional.
 
 ## Installation
 
-To use these utilities in your project, clone the repository and install the
-dependencies:
+With npm:
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
-npm install
+npm install @ryanxcharles/result
+```
+
+With pnpm:
+
+```bash
+pnpm install @ryanxcharles/result
 ```
 
 ## Usage
