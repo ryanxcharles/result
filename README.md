@@ -116,7 +116,8 @@ it to a number. If the string cannot be parsed, it returns an `Err` with an
 error message; otherwise, it returns an `Ok` with the parsed number.
 
 ```typescript
-import { Result, Ok, Err, isOk, isErr } from "./your-module";
+import type { Result } from "@ryanxcharles/result";
+import { Ok, Err, isOk, isErr } from "@ryanxcharles/result";
 
 function parseNumber(value: string): Result<number, string> {
   const parsed = Number(value);
