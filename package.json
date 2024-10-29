@@ -2,10 +2,29 @@
   "name": "@ryanxcharles/result",
   "version": "1.0.0",
   "description": "A Rust-like Result type for TypeScript/node.js/deno/bun.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "main": "tsx src/main.ts",
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint --write --unsafe",
+    "format": "biome format --write",
+    "fix": "pnpm run typecheck && pnpm run lint && pnpm run format",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": ["result"],
+  "author": "Ryan X. Charles <ryan@ryanxcharles.com> (http://ryanxcharles.com)",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.3",
+    "@types/node": "^22.7.5",
+    "globals": "^15.11.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
 }
