@@ -229,7 +229,7 @@ This project uses [Vitest](https://vitest.dev/) for testing. To run the tests,
 use the following command:
 
 ```bash
-npx vitest
+pnpm run test
 ```
 
 ### Running Specific Tests
@@ -237,7 +237,7 @@ npx vitest
 To run specific tests, you can use Vitest’s filtering options:
 
 ```bash
-npx vitest <test-name>
+pnpm run test <test-name>
 ```
 
 ## Contributing
